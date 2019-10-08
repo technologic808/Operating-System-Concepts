@@ -113,7 +113,7 @@ echo $div
 # 3.Write a program to print calendar of current month in next year,previous years.
 # For eg:- sep 2014,sep 2012 if current month is sep 2013
 
-cal -my 10 2020; cal -my 10 2018
+cal -m $(`echo date +%m`)p; cal -m $(`echo date +%m`)f
 
 # 4.Write a program to check whether given no.is even or odd
 
@@ -138,5 +138,11 @@ touch five.sh
 
 # 6.Write a script to check type of a traingle.Sides of the triangle should be
 # provided as command line arguments.
+
+touch six.sh
+
 # 7. Write a script to print day of the week using a) elif b) case
+
+touch seven_a.sh seven_b.sh
+
 # 8.To check given year is leap or not
