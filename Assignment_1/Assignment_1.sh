@@ -14,24 +14,37 @@ cd cat2C
 touch seven eight nine
 cd ..
 
-
 # a) display files row wise, column wise, 1 per row
 
-# rowwise
-ls -l
-
+ls -C
+ls -1
 
 # b) sort the files in ascending, descending order
 
+ls -lt
+ls -ltr
 
+# c) Create some hidden files and sub directories and display them using “ls -a”
 
-# c) Create some hidden files and sub directories and display them using “ls -
-# a”
+touch .cool
+ls -a
+
 # d) Change time stamp of some files and directories using touch command
 # and display the files using ls -t ls -rt
+
+# TO-DO
+
 # e) Recursive display contents of your home directory.
+
+ls -R
+
 # f) display all attributes of files and directories using ls -l
+
+ls -l
+
 # g) display attributes of a directory using ls -ld
+
+ls -ld
 
 # 2.
 # Create three directory a b and c and create a.txt,b.txt and c.txt
@@ -111,19 +124,54 @@ rm cdac -r
 # further help a) date b) cal c) bc d) echo e) who f) whoami g) logname g) uname h)
 # seq i) clear
 
+man help;
+man date;
+man cal;
+man bc;
+man echo;
+man who;
+man whoami;
+man logname;
+man uname;
+man seq;
+man clear;
 
-date # a
 
-
-
-
-
-
-
-# 11 < FOR ADITYA >
+# 11
 # Create a file with some content using vi editor
 # a) Display the file using cat command
 # b) Display line no.s along with content
 # c) Display the file in reverse order using tac
 # d) Combine multiple files using cat command
 
+cat Editing_vi.txt 
+man cat
+cat -n Editing_vi.txt 
+tac Editing_vi.txt 
+man tac
+tac Editing_vi.txt 
+man tac
+tac -r Editing_vi.txt 
+man tac
+tac -b Editing_vi.txt 
+cat  Editing_vi.txt 
+tac Editing_vi.txt 
+man tac
+vi Editing_vi.txt 
+tac Editing_vi.txt 
+man tac
+H_Day1.txt > history
+history > H_Day1.txt
+
+cat History_Day1 H_Day1.txt > History_Day01.txt
+vi History_Day01.txt 
+cat history
+cat
+cat > history
+echo `history`
+vi History_Day01.txt 
+ls -a
+rm .History_Day01.txt.swp 
+vi History_Day01.txt 
+clear
+history > file
